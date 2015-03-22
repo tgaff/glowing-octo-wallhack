@@ -129,6 +129,9 @@ body {
   width: 33.33%;
 }
 
+.clear-floats {
+	clear: both;
+}
 
 /*
   ========================================
@@ -187,6 +190,12 @@ h3 {
   font-size: large;
 	padding: 16px;
 }
+
+h1 {
+  font-size: x-large;
+	padding: 16px;
+}
+
 
 pre {
 	background-color: gray;
