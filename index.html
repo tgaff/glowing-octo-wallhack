@@ -36,6 +36,10 @@
 
     <section class="container">
       <h3>With floats</h3>
+      <pre>
+        float: left;
+        width: 33.33%;
+      </pre>
       Nicely organized in columns. I like it.
       <section class="above">Above</section>
       <section class="box1 float c-1-3">First Section</section>
@@ -47,7 +51,45 @@
     <br>
 
     <section class="container">
+      <h3>With floats and no width property set</h3>
+      <pre>
+        float: left;
+      </pre>
+
+      <section class="above">Above</section>
+      <section class="box1 float">First Section</section>
+      <section class="box2 float">Second Section</section>
+      <section class="box3 float">Third Section</section>
+      <section class="below">Below</section>
+    </section>
+
+    <br>
+    <section class="container">
+      <h3>With floats and no width, and one column floated right.</h3>
+      <pre>
+        .float {
+          float: left;
+          width: 33.33%;
+        }
+        .float-right {
+          float: right;
+        }
+      </pre>
+      Note how the section below ends up wrapping into the right floated section.
+      Very ugly!
+      <section class="above">Above</section>
+      <section class="box1 float">First Section</section>
+      <section class="box2 float">Second Section</section>
+      <section class="box3 float-right">3 Floated right</section>
+      <section class="below">Below</section>
+    </section>
+
+    <br>
+
+
+    <section class="container">
       <h3>As inline-block elements (no float)</h3>
+      <pre>  display: inline-block;</pre>
       Obviously this is suffering from space between elements.
       <section class="above">Above</section>
       <section class="box1 ib c-1-3">First Section</section>
@@ -70,6 +112,8 @@
     </section>
 
     <br>
+
+
 
     <footer class="container primary-footer">
       <small>&copy; tgaff</small>
