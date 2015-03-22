@@ -80,7 +80,16 @@ body {
   Boxes
   ========================================
 */
+.above {
+  background-color: #D6D8FF;
+}
 
+.below {
+  background-color: #D6D8FF;
+}
+
+.above,
+.below,
 .box1,
 .box2,
 .box3 {
