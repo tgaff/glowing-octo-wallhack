@@ -95,6 +95,8 @@ body {
 .box3 {
   padding-left: 15px;
   padding-right: 15px;
+	border-radius: 6px;
+	font-size: 150%;
 }
 
 .box1 {
