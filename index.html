@@ -41,6 +41,8 @@
         width: 33.33%;
       </pre>
       Nicely organized in columns. I like it.
+      However, note the small issue with the 'Below' section.
+      See the clear-floats fix below to see how to resolve this.
       <section class="above">Above</section>
       <section class="box1 float c-1-3">First Section</section>
       <section class="box2 float c-1-3">Second Section</section>
@@ -55,7 +57,7 @@
       <pre>
         float: left;
       </pre>
-
+      The elements simply take the space they need and line-up left-to-right.
       <section class="above">Above</section>
       <section class="box1 float">First Section</section>
       <section class="box2 float">Second Section</section>
@@ -103,9 +105,30 @@
       <section class="box3 float-right">3 Floated right</section>
       <section class="below clear-floats">Below</section>
     </section>
-
-
     <br>
+    <section class="container">
+      <h3>Finally we'll add the width back in.</h3>
+      <pre>
+        .float {
+          float: left;
+        }
+        .c-1-3 {
+          width: 33.33%;
+        }
+        .below-clear {
+          clear: both;
+        }
+      </pre>
+      Perfect!!  Note that we
+      really don't need a float-right anymore either.
+      <section class="above">Above</section>
+      <section class="box1 float c-1-3">First Section</section>
+      <section class="box2 float c-1-3">Second Section</section>
+      <section class="box3 float-right c-1-3">3 Floated right</section>
+      <section class="below clear-floats">Below</section>
+    </section>
+
+    <br>    <br>
 
 
     <section class="container">
