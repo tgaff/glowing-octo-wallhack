@@ -24,10 +24,11 @@
 
     <section class="container">
       <h3>Without floats</h3>
+      The elements simply stack.
       <section class="above">Above</section>
-      <section class="box1">First Section</section>
-      <section class="box2">Second Section</section>
-      <section class="box3">Third Section</section>
+      <section class="box1 c-1-3">First Section</section>
+      <section class="box2 c-1-3">Second Section</section>
+      <section class="box3 c-1-3">Third Section</section>
       <section class="below">Below</section>
     </section>
 
@@ -35,12 +36,40 @@
 
     <section class="container">
       <h3>With floats</h3>
+      Nicely organized in columns. I like it.
       <section class="above">Above</section>
       <section class="box1 float c-1-3">First Section</section>
       <section class="box2 float c-1-3">Second Section</section>
       <section class="box3 float c-1-3">Third Section</section>
       <section class="below">Below</section>
     </section>
+
+    <br>
+
+    <section class="container">
+      <h3>As inline-block elements (no float)</h3>
+      Obviously this is suffering from space between elements.
+      <section class="above">Above</section>
+      <section class="box1 ib c-1-3">First Section</section>
+      <section class="box2 ib c-1-3">Second Section</section>
+      <section class="box3 ib c-1-3">Third Section</section>
+      <section class="below">Below</section>
+    </section>
+
+    <br>
+
+    <section class="container">
+      <h3>Inline-block elements (with comment space hack)</h3>
+      This resolves the issue.
+
+      <section class="above">Above</section>
+      <section class="box1 ib c-1-3">First Section</section><!--
+      --><section class="box2 ib c-1-3">Second Section</section><!--
+      --><section class="box3 ib c-1-3">Third Section</section>
+      <section class="below">Below</section>
+    </section>
+
+    <br>
 
     <footer class="container primary-footer">
       <small>&copy; tgaff</small>
