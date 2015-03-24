@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Genericy title</title>
+    <link rel="stylesheet" href="relative_and_absolute_positioning.css">
+  </head>
+  <body>
+    <header class="container primary-header">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="link1.html">Mario</a>
+        <a href="link2.html">Luigi</a>
+        <a href="peach.html">Peach</a>
+        <a href="toad.html">Toad</a>
+      </nav>
+    </header>
+    <section class="container">
+      <p>The possible values for position are: static (default), relative,
+        absolute, and fixed.</p>
+        <ul>
+          <li>static - default</li>
+          <li>fixed - does not move regardless of scroll </li>
+          <li>relative</li>
+          <li>absolute</li>
+        </ul>
+    </section>
+
+    <section class="container">
+      <h3>Ex 1: Our usual 3 boxes</h3>
+      We've assigned them a 33% width to make this easier.
+      They are set as <pre class='block'>display: block;</pre>
+      <section class="above">Above</section>
+      <section class="box1">First Section</section>
+      <section class="box2">Second Section</section>
+      <section class="box3">Third Section</section>
+      <section class="below">Below</section>
+    </section>
+
+    <br>
+
+
+
+    <section class="container">
+      <h3>Ex 2: setting the second box to have an offset from the top-right</h3>
+      <pre>
+        .offset-tr {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+      </pre>
+      As we see, it ends up at the top of the page.  It lacks a parent to derive
+      it's relative positioning from.  Therefore it's positioned based on the
+      body.
+      <section class="above">Above</section>
+      <section class="box1">First Section</section>
+      <section class="box2 offset-tr">Second Section (See exhibit 2)</section>
+      <section class="box3">Third Section</section>
+      <section class="below">Below</section>
+    </section>
+
+
+
+    <section class="container">
+      <h3>Ex 3: box 2 with offset and parent set to relative</h3>
+      <pre>
+        .offset-tr {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+        .relative {
+          position: relative;
+        }
+      </pre>
+      In this case we've also wrapped the whole group in a div with .relative set.
+      The position of the 'absolute'ly positioned element is derived from the parent
+      'relative'ly positioned element.
+      <div class="relative">
+        <section class="above">Above</section>
+        <section class="box1">First Section</section>
+        <section class="box2 offset-tr">Second Section</section>
+        <section class="box3">Third Section</section>
+        <section class="below">Below</section>
+      </div>
+    </section>
+
+
+
+    <section class="container">
+      <h3>Ex 4: The results of setting all 3 boxes to absolute positioning.</h3>
+      Box 2 still has an offset, which is based on the 'div' surrounding these.
+      As can (almost) be seen, the first and third boxes are stacked on the 'below'
+      box.  This shows how their size is not included in the page and instead they
+      float where they would have been otherwise.
+      <div class="relative">
+        <section class="above">Above</section>
+        <section class="box1 absolute">First Section</section>
+        <section class="box2 offset-tr">Second Section</section>
+        <section class="box3 absolute">Third Section, position: 'absolute'</section>
+        <section class="below">Below</section>
+      </div>
+    </section>
+
+
+
+
+    <footer class="container primary-footer">
+      <small>&copy; tgaff</small>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="link1.html">Mario</a>
+        <a href="link2.html">Luigi</a>
+        <a href="peach.html">Peach</a>
+        <a href="toad.html">Toad</a>
+      </nav>
+
+    </footer>
+  </body>
+</html>
