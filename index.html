@@ -24,7 +24,7 @@
 
     <section class="container">
       <h3>Without floats</h3>
-      The elements simply stack.
+      The elements simply stack.  (Note this includes a width.)
       <section class="above">Above</section>
       <section class="box1 c-1-3">First Section</section>
       <section class="box2 c-1-3">Second Section</section>
@@ -53,7 +53,7 @@
     <br>
 
     <section class="container">
-      <h3>With floats and no width property set</h3>
+      <h3>With floats and if we remove the width property.</h3>
       <pre>
         float: left;
       </pre>
@@ -76,8 +76,8 @@
           float: right;
         }
       </pre>
-      Note how the section below ends up wrapping into the right floated section.
-      Very ugly!
+      Note how the section called 'below' ends up wrapping into the right floated section.
+      Very ugly.
       <section class="above">Above</section>
       <section class="box1 float">First Section</section>
       <section class="box2 float">Second Section</section>
@@ -86,7 +86,7 @@
     </section>
     <br>
     <section class="container">
-      <h3>Now we clear floats around the bottom (footer here)</h3>
+      <h3>Now we clear-floats around the bottom (footer here)</h3>
       <pre>
         .float {
           float: left;
@@ -135,7 +135,8 @@
       <h1> Next we look at an alternate approach using inline-block elements </h1>
       <h3>As inline-block elements (no float)</h3>
       <pre>  display: inline-block;</pre>
-      Obviously this is suffering from space between elements.
+      Obviously this is suffering from space between elements.  That in turn
+      caused the 3rd element to jump down a line.
       <section class="above">Above</section>
       <section class="box1 ib c-1-3">First Section</section>
       <section class="box2 ib c-1-3">Second Section</section>
