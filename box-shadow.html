@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>box-shadow title</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="box-shadow.css">
+  </head>
+  <body>
+    <header class="container primary-header">
+      <h1 class="logo">
+        <a href="index.html">HTML<br>and<br>CSS</a>
+      </h1>
+
+      <h3 class="tagline">samples and experiments.</h3>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floating_and_aligning_elements.html">floating and aligning elements</a>
+        <a href="relative_and_absolute_positioning.html">relative and absolute positioning</a>
+      </nav>
+    </header>
+    <br>
+
+    <section class="container">
+      <h3>box-shadow</h3>
+      <p>box-shadow is similar to <a href="typography.html#shadow">text-shadow</a> except it sets shadow for the
+      entire box.  It also accepts a couple of optional extra parameters.  The
+      first is spread which controls the size of the shadow.  Negative values are
+      allowed.  Inset can be placed (optionally) after color and changes the
+      shadow from an outer shadow to an inner shadow.</p>
+      <pre>
+        box-shadow: 2px 2px 2px 8px rgba(255,0,0, .5), inset;
+        box-shadow: x y blur* spread* color**, inset*;</pre>
+      <p>Note that in the above '*' denotes an optional parameter.</p>
+      <pre>box-shadow: 3px 5px 0px 1px rgba(0,0,255,1);</pre>
+      <p class="ex box-shadow1">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This is an inset shadow with a blur.</p>
+      <pre>box-shadow: 3px 5px 3px 1px rgba(0,200,150,1) inset;</pre>
+      <p class="ex box-shadow-inset">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This one has a higher value for spread.</p>
+      <pre>box-shadow: 3px 5px 3px 8px rgba(0,200,150,1) inset;</pre>
+      <p class="ex box-shadow-inset-spread">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This one looks a bit better.</p>
+      <pre>box-shadow: 0px 0px 5px 5px rgba(50,0,0,.5);</pre>
+      <br>
+      <p class="ex box-shadow-pretty">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+      <br>
+      <h3>box-shadows can also be stacked by separating with commas</h3>
+      <pre>  box-shadow:  10px 10px 15px 15px rgba(250,0,0,.5),
+                         -10px 10px 15px 15px rgba(0,250,0,.5),
+                          10px -10px 15px 15px rgba(0,0,250,.5);
+      </pre>
+      <br>
+      <p class="ex box-shadow-crazy">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+      <br>
+    </section>
+
+    <footer class="container primary-footer">
+      <small>&copy; tgaff </small>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floating_and_aligning_elements.html">floating and aligning elements</a>
+        <a href="relative_and_absolute_positioning.html">relative and absolute positioning</a>
+        <a href="peach.html">Peach</a>
+        <a href="toad.html">Toad</a>
+      </nav>
+
+    </footer>
+  </body>
+</html>
