@@ -5,6 +5,8 @@
     <title>Genericy title</title>
     <link rel="stylesheet" href="basic.css">
     <link rel="stylesheet" href="typography.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower'
+    rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="container primary-header">
@@ -184,13 +186,46 @@
     </section>
 
 
+    <section class="container">
+      <h2>fonts</h2>
+      <p>Next we'll look at fonts</p>
+    </section>
 
 
+    <section class="container">
+      <h3>font-family</h3>
+      <p>font-family is used to select a font or series of fonts to be used for
+      the text.  If the first font in the series is not available, the next is
+      used and if it's not available, the next. (and so on)</p>
+      <br>
+      <pre>
+        font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",
+        Georgia,serif;
+      </pre>
+      <p class="ex fontfam">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+    </section>
 
-
-
-
-
+    <section class="container">
+      <h3>embedding fonts</h3>
+      <p>We can embed fonts in the header just like stylesheets.</p>
+      <br>
+      <pre>
+        &lt;link href='http://fonts.googleapis.com/css?family=Indie+Flower'
+              rel='stylesheet'
+              type='text/css'&gt;
+      </pre>
+      and in our css, always quote the font-name:
+      <pre>
+        font-family: 'Indie Flower', cursive;
+      </pre>
+      <p class="ex embedfont">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+    </section>
 
 
 
