@@ -1,3 +1,10 @@
+.ex {
+  border-color: #AAA;
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-width: 2px;
+  padding: 18px;
+}
 .color-size-style {
   color: #E0E;
   font-size: 15px;
@@ -10,4 +17,8 @@
 
 .bolder {
   font-weight: bolder;
+}
+
+.line-height {
+  line-height: 200%;
 }
