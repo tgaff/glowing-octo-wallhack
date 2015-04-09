@@ -158,7 +158,7 @@
       <h3>text-transform</h3>
       <p>text-transform is similar to font-variant, however font-variant actually,
         looks for a variation of the font that has the specified property.
-        text-transform just changes the text in the current typeface.
+        text-transform just changes the text in the current font.
         text-transform accepts: none, capitalize, uppercase, lowercase and inherit.
         capitalize will make the first letter of each word a capitol letter.
       </p>
@@ -227,7 +227,31 @@
       </p>
     </section>
 
-
+    <section class="container">
+      <h3>font</h3>
+      <p>The font attribute can be used to specify multiple properties at once.
+      Specifically we can list:</p>
+      <ul>
+        <li>font-style</li>
+        <li>font-variant</li>
+        <li>font-weight</li>
+        <li>font-size</li>
+        <li>line-height</li>
+        <li>font-family</li>
+      </ul>
+      <br>
+      <p>Use a forward-slash between font-size and line-height.  Everything is
+        optional except font-size and font-family.
+      </p>
+      <pre>
+        font: style variant weight size/line-height font-family1,font-family2;
+        font: italic small-caps bold 18px/32px 'Indie Flower', cursive;
+      </pre>
+      <p class="ex font">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+    </section>
 
 
 
