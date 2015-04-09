@@ -128,7 +128,7 @@
 
     <section class="container">
       <h3>more text shadows</h3>
-        By setting negative values for the offsets the shadow can be moved
+      <p>By setting negative values for the offsets the shadow can be moved
         upwards and to the left.  We can also have multiple text-shadows by
         seperating them with commas.
       </p>
@@ -140,6 +140,47 @@
       </p>
     </section>
 
+
+    <section class="container">
+      <h3>box-shadow</h3>
+      <p>box-shadow is similar to text-shadow except it sets shadow for the
+      entire box.  It also accepts a couple of optional extra parameters.  The
+      first is spread which controls the size of the shadow.  Negative values are
+      allowed.  Inset can be placed (optionally) after color and changes the
+      shadow from an outer shadow to an inner shadow.</p>
+      <pre>
+        box-shadow: 2px 2px 2px 8px rgba(255,0,0, .5), inset;
+        box-shadow: x y blur* spread* color**, inset*;</pre>
+      <p>Note that in the above '*' denotes an optional parameter.</p>
+      <pre>box-shadow: 3px 5px 0px 1px rgba(0,0,255,1);</pre>
+      <p class="ex box-shadow1">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This is an inset shadow with a blur.</p>
+      <pre>box-shadow: 3px 5px 3px 1px rgba(0,200,150,1) inset;</pre>
+      <p class="ex box-shadow-inset">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This one has a higher value for spread.</p>
+      <pre>box-shadow: 3px 5px 3px 8px rgba(0,200,150,1) inset;</pre>
+      <p class="ex box-shadow-inset-spread">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+
+      <p>This one looks a bit better.</p>
+      <pre>box-shadow: 0px 0px 5px 5px rgba(50,0,0,.5);</pre>
+      <br>
+      <p class="ex box-shadow-pretty">'I DON'T know,' said the Caterpillar.
+      Alice said nothing: she had never been so much contradicted in her life
+      before, and she felt that she was losing her temper.
+      </p>
+      <br>
+    </section>
 
 
 
