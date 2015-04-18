@@ -62,19 +62,35 @@
     <section class="container">
       <h3>Positioning the image</h3>
       We're also allowing the image to repeat in the x direction only now.
+      Notice the effect created by moving the image and allowing it to repeat.
       <pre>
         background-color: #ccf;
         background-image: url("images/starry-smudge.png");
         background-repeat: repeat-x;
-        background-position: 4px 4px;
+        background-position: 12px 4px;
       </pre>
       <section class="bbox bg-image-moved">A section with background image
-        moved by 4 px from the top and 4px from the left.</section>
+        moved by 4 px from the top and 12px from the left.</section>
     </section>
 
     <br>
 
 
+    <section class="container">
+      <h3>Centering the image</h3>
+      <pre>
+        background-color: #ccf;
+        background-image: url("images/starry-smudge.png");
+        background-repeat: repeat-x;
+        background-position: 50% 50%;
+      </pre>
+      <section class="bbox bg-image-center">Centered background image</section>
+      <section class="bbox bg-image-center-nrp">Also, with no-repeat (for
+        clarity)
+      </section>
+    </section>
+
+    <br>
 
 
 

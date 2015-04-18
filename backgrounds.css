@@ -23,5 +23,19 @@
   background-color: #ccf;
   background-image: url("images/starry-smudge.png");
   background-repeat: repeat-x;
-  background-position: 4px 4px;
+  background-position: 12px 4px;
+}
+
+.bg-image-center {
+  background-color: #ccf;
+  background-image: url("images/starry-smudge.png");
+  background-repeat: repeat-x;
+  background-position: 50% 50%;
+}
+
+.bg-image-center-nrp {
+  background-color: #ccf;
+  background-image: url("images/starry-smudge.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
