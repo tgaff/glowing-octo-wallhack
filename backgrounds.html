@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>box-shadow title</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="backgrounds.css">
+  </head>
+  <body>
+    <header class="container primary-header">
+      <h1 class="logo">
+        <a href="index.html">HTML<br>and<br>CSS</a>
+      </h1>
+
+      <h3 class="tagline">samples and experiments.</h3>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floating_and_aligning_elements.html">floating and aligning elements</a>
+        <a href="relative_and_absolute_positioning.html">relative and absolute positioning</a>
+        <a href="typography.html">typography</a>
+        <a href="box-shadow.html">box shadows</a>
+        <a href="backgrounds.html">backgrounds</a>
+      </nav>
+    </header>
+    <br>
+
+    <section class="container">
+      <h3>Basic color background</h3>
+      <pre>
+      background-color: #ccf;
+      </pre>
+      <section class="bbox bg-color">A section with background color.</section>
+    </section>
+
+    <br>
+
+    <section class="container">
+      <h3>Basic image background</h3>
+      <pre>
+      background-image: url("images/starry-smudge.png")
+      </pre>
+      <section class="bbox bg-image">A section with background image.</section>
+    </section>
+
+    <br>
+
+
+    <section class="container">
+      <h3>Using the image only once in the background</h3>
+      <pre>
+      background-color: #ccf;
+      background-image: url("images/starry-smudge.png");
+      background-repeat: no-repeat;
+      </pre>
+      <section class="bbox bg-image-norepeat">A section with background image.</section>
+    </section>
+
+    <br>
+
+
+    <section class="container">
+      <h3>Positioning the image</h3>
+      We're also allowing the image to repeat in the x direction only now.
+      <pre>
+        background-color: #ccf;
+        background-image: url("images/starry-smudge.png");
+        background-repeat: repeat-x;
+        background-position: 4px 4px;
+      </pre>
+      <section class="bbox bg-image-moved">A section with background image
+        moved by 4 px from the top and 4px from the left.</section>
+    </section>
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="container primary-footer">
+      <small>&copy; tgaff </small>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="floating_and_aligning_elements.html">floating and aligning elements</a>
+        <a href="relative_and_absolute_positioning.html">relative and absolute positioning</a>
+        <a href="typography.html">typography</a>
+        <a href="box-shadow.html">box shadows</a>
+     </nav>
+
+    </footer>
+  </body>
+</html>
