@@ -39,3 +39,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+.bg-shorthand1 {
+  background: #ccf url("images/starry-smudge.png") 50% 50% no-repeat;
+}
